@@ -10,7 +10,7 @@ myApp.config(function ($routeProvider) {
   })
 
   .when('/second', {
-    templateUrl: './pages/about.html',
+    templateUrl: './pages/second.html',
     controller: 'secondController'
   })
 

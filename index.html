@@ -25,14 +25,32 @@
 <header>
 			<nav class="navbar navbar-default">
 			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand top-title" href="/">LOREM</a>
+				<!-- <div class="navbar-header"> -->
+					<!-- <a class="navbar-brand top-title" href="/">TRAVLR<small> A PERSONAL BLOG</small></a> -->
 				</div>
 
+          <div class="col span_1_of_4">
+              <h4>TRAVLR <small>A PERSONAL BLOG</small></h4>
+            </div>
+            <div class="col span_1_of_4">
+              <div class="homenav">
+                <li><a href="#"></i>HOME</a></li>
+              </div>
+            </div>
+            <div class="col span_1_of_4">
+              <div class="aboutnav">
+                <li><a href="#/second"><i></i>ABOUT</a></li>
+              </div>
+            </div>
+            <div class="col span_1_of_4">
+              <div class="contactnav">
+                <li><a href="#/third"><i></i>CONTACT</a></li>
+              </div>
+            </div>
+          </div>
+
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"></i>HOME</a></li>
-          <li><a href="#/second"><i></i>ABOUT</a></li>
-          <li><a href="#/third"><i></i>CONTACT</a></li>
+
 
 				</ul>
 			</div>
@@ -40,10 +58,11 @@
 		</header>
 
 
-    <div class="container main-container">
+    <div class="container">
+      <div id="main-scope">
 
-    <div ng-view></div>
-
+        <div ng-view></div>
+      </div>
     </div>
 
 
