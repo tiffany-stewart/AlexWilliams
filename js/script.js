@@ -10,8 +10,13 @@ myApp.config(function ($routeProvider) {
   })
 
   .when('/second', {
-    templateUrl: './pages/second.html',
+    templateUrl: './pages/about.html',
     controller: 'secondController'
+  })
+
+  .when('/third', {
+    templateUrl: './pages/third.html',
+    controller: 'thirdController'
   })
 
 });
@@ -21,5 +26,9 @@ myApp.controller('mainController', ['$scope', '$log', function($scope, $log) {
 }]);
 
 myApp.controller('secondController', ['$scope', '$log', function($scope, $log) {
+
+}]);
+
+myApp.controller('thirdController', ['$scope', '$log', function($scope, $log) {
 
 }]);
