@@ -1,39 +1,112 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../images/crisplake.jpg);
-  width: 100%;
+  background: url(/images/scale.jpg)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: absolute;
+  background-color: #F2EFE9;
   clear:both;
+  font-family: 'Lato', sans-serif;
 }
 
-header small {
-  font-size: 10px;
+#header {
+  background-color: rgba(242, 242, 242, .7);
+  text-align: center;
+  padding-top: 10px;
+  height: 80px;
 }
 
-header {
-  background-color: #000;
+#header img {
+  height: 25px;
+  margin-top: 15px;
 }
 
-h4 {
-  margin-top: 25px;
-  margin-left: 10px;
+#homenav {
+  background-color: rgba(184, 189, 181, .8);
+  height: 50px;
+  padding-top: 15px;
+  /*margin-top: 20%;*/
+}
+
+#homenav:hover {
+  background-color: rgb(184, 189, 181);
+  transition: 1s;
+}
+
+#aboutnav {
+  background-color: rgba(136, 150, 150, .8);
+  height: 50px;
+  padding-top: 15px;
+  /*margin-top: 20%;*/
+}
+
+#aboutnav:hover {
+  background-color: rgb(136, 150, 150);
+  transition: 1s;
+}
+
+#contactnav {
+  background-color: rgba(95, 116, 112, .8);
+  height: 50px;
+  padding-top: 15px;
+  /*margin-top: 20%;*/
+}
+
+#contactnav:hover {
+  background-color: rgb(95, 116, 112);
+  transition: 1s;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 0% 0 0% 0%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.66%; }
+.span_1_of_3 { width: 33.33%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
 
 #main-scope {
   /*background-color: #000;*/
-  border: 1px solid #000;
-  height: 500px;
-  width: 90%;
-  margin-left: 5%;
-  border-radius: 0;
-  /*margin-top: 50%;*/
-  /*margin-top: -500px;*/
+  /*border: 1px solid #BFB49F;*/
+  height: 600px;
+  width: 100%;
+  margin-left: 10%;
+  position: relative;
+  right: 0;
+  margin-bottom: 75px;
+  display: inline-block;
+  float: right;
+  /*top: 75px;*/
+  background-color: rgba(37, 38, 39, 0.6);
 }
 
 .navbar{
-  background-color: #BFC3BA;
+  background-color: #0c1821;
   height: 70px;
   border-radius: 0px;
 }
@@ -45,25 +118,40 @@ h4 {
 }
 
 .homenav {
-  background-color: #60495A;
+  background-color: #1b2a41;
   height: 83px;
   margin-top: -30px;
   opacity: .7;
 }
 
+.homenav:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
 .aboutnav {
-  background-color: #3F3244;
+  background-color: #324a5f;
   height: 83px;
   margin-top: -30px;
   opacity: .7;
+}
+
+.aboutnav:hover {
+  opacity: 1;
+  transition: 1s;
 }
 
 
 .contactnav {
-  background-color: #2F2235;
+  background-color: #ccc9dc;
   height: 83px;
   margin-top: -30px;
   opacity: .7;
+}
+
+.contactnav:hover {
+  opacity: 1;
+  transition: 1s;
 }
 
 /*  SECTIONS  */
@@ -138,3 +226,15 @@ h4 {
 
 
 /* HOME VIEW CSS */
+
+.main1 h1 {
+  color: #fff;
+}
+
+.third h1 {
+  color: #fff;
+}
+
+.second h1 {
+  color: #fff;
+}
