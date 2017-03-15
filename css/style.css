@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(/images/scale.jpg)  no-repeat center center fixed;
+  background: url(/images/luc.jpg)  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -103,6 +103,7 @@ body {
   float: right;
   /*top: 75px;*/
   background-color: rgba(37, 38, 39, 0.6);
+  overflow: scroll;
 }
 
 .navbar{
@@ -237,4 +238,119 @@ body {
 
 .second h1 {
   color: #fff;
+}
+
+
+/* PARALLAX */
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  /*opacity: 0.85;*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+.bgimg-1 {
+  background-image: url("../images/graffitti.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("../images/guan.jpg");
+  min-height: 500px;
+  background-position: center;
+}
+
+.bgimg-3 {
+  background-image: url("../images/lucabravo.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("../images/tube.jpg");
+  height: 600px;
+  width: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption h5 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.para {
+  text-align: center;
+}
+
+/* Johnny */
+
+.photo-johnny {
+  width: 100%;
+  margin-top: -230px;
+  margin-bottom: 30px;
+  z-index: 1;
+  position: relative;
+}
+
+.photo-johnny img {
+  height: 350px;
+  margin: 20px 5px 5px 0;
+  opacity: .7;
+}
+
+.photo-johnny ul {
+  display: inline;
+}
+
+.photo-johnny li {
+  display: inline-block;
+}
+
+/* Room */
+
+.photo-room {
+  width: 100%;
+  margin-top: -230px;
+  margin-bottom: 30px;
+}
+
+.photo-room img {
+  width: 300px;
+  margin: 20px;
+  margin: 80px 5px 5px 0;
+  opacity: .7;
+}
+
+.photo-room ul {
+  display: inline;
+}
+
+.photo-room li {
+  display: inline-block;
 }
